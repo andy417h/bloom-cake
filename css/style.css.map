@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/global/_color.scss",
+    "../scss/global/_content-width.scss",
+    "../scss/global/_font.scss",
+    "../scss/global/_z-index.scss",
+    "../scss/foundation/_reset.scss",
+    "../scss/foundation/_base.scss",
+    "../scss/global/_breakpoints.scss",
+    "../scss/utility/_utility.scss",
+    "../scss/component/_button.scss",
+    "../scss/component/_title.scss",
+    "../scss/layout/_container.scss",
+    "../scss/layout/header/_header.scss",
+    "../scss/layout/header/_header-nav.scss",
+    "../scss/layout/footer/_footer.scss",
+    "../scss/layout/footer/_footer-nav.scss",
+    "../scss/page/top/_common.scss",
+    "../scss/page/top/_top-kv.scss",
+    "../scss/page/about/_about.scss",
+    "../scss/animation/_text-animation.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA;AAAA;AAAA;AAIA;EACI;;;ACLJ;AAAA;AAAA;AAAA;AAIA;EACI;EACA;;;ACNJ;AAAA;AAAA;AAAA;AAIA;EACI;;;ACLJ;AAAA;AAAA;AAAA;AAIA;EACI;EACA;EACA;EACA;;;ACNJ;AAAA;AAAA;AAAA;AAIA;EACI;EACA;;;AAGJ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAyBI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;AAAA;EAEI;;;AAGJ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EASI;EACA;;;AAGJ;AAAA;EAEI;;;AAGJ;AAAA;EAEI;;;AAGJ;AAAA;AAAA;AAAA;AAAA;AAAA;EAMI;EACA;;;AAGJ;AAAA;EAEI;;;AAGJ;AAAA;EAEI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;AAAA;AAAA;AAAA;EAII;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;AAAA;AAAA;EAGI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAGJ;AAAA;EAEI;;;ACrKJ;AAAA;AAAA;AAAA;AAIA;EACI;EACA;EACA;EACA;;ACEA;EDNJ;IAOQ;;;;AEXR;AAAA;AAAA;AAAA;ADUI;ECLJ;IAEQ;;;;AAIR;EACI;;ADFA;ECCJ;IAIQ;;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC9BJ;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;AAIA;EACI;EACA;;;AAGJ;EAEI;;;AAGJ;EAEI;;;AChBJ;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;AAKA;EACI;EACA;EACA;EACA;EACA;;;ACVJ;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;AAIA;EACI;EACA;;;AAGJ;EACI",
+  "file": "style.css"
+}
