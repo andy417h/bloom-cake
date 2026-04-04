@@ -18,7 +18,7 @@ modalClose.forEach((closeButton) => {
 
 // アコーディオン
 
-const accTtls = Array.from(document.querySelectorAll(".accordion__open"));
+const accTtls = Array.from(document.querySelectorAll(".accordion__title"));
 
 accTtls.forEach((item) => {
   item.addEventListener("click", function () {

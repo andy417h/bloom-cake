@@ -14,6 +14,7 @@ global > color
   --text-color: #5d5d5d;
   --footer-text-color: #fafafa;
   --modal-bg-color: rgba(0, 0, 0, 0.6);
+  --modal-contents-bg-color: #fafafa;
 }
 
 /*!
@@ -240,39 +241,6 @@ li {
 }
 
 /*!
-utility > utility
-------------------------------
-*/
-@media screen and (min-width: 768px) {
-  .u-sp {
-    display: none !important;
-  }
-}
-
-.u-pc {
-  display: none !important;
-}
-@media screen and (min-width: 768px) {
-  .u-pc {
-    display: block !important;
-  }
-}
-
-.u-visually-hidden {
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  border: 0 !important;
-  padding: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  margin: -1px !important;
-}
-
-/*!
 component > button
 ------------------------------
 */
@@ -350,7 +318,7 @@ component > title
 .c-ttl {
   font-size: 1.8rem;
   font-weight: 500;
-  list-style: 1;
+  line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .c-ttl {
@@ -473,7 +441,7 @@ layout > footer
     font-size: 3.2rem;
   }
 }
-.footer__nav-list {
+.footer__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -522,7 +490,7 @@ top > modal
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: var(--z-index-modal);
   width: 100%;
   height: 100vh;
   transition:
@@ -552,7 +520,7 @@ top > modal
   transform: translate(-50%, -50%);
   max-width: 600px;
   width: 90%;
-  background-color: #fff;
+  background-color: var(--modal-contents-bg-color);
   border-radius: 8px;
 }
 
@@ -608,12 +576,12 @@ top > modal
   border-radius: 2px;
   font-size: 18px;
   box-sizing: border-box;
-  background-color: #fafafa;
+  background-color: var(--modal-contents-bg-color);
 }
 
 .modal-form__input:focus {
-  outline-color: #333;
-  background-color: #fff;
+  outline-color: var(--text-color);
+  background-color: var(--modal-contents-bg-color);
 }
 
 .modal-form__btn {
@@ -946,14 +914,14 @@ top > faq
   padding: 0 15px;
   margin: 0 auto;
 }
-.accordion__open {
+.accordion__title {
   position: relative;
   color: var(--text-color);
   padding: 15px 15px 15px 45px;
   cursor: pointer;
 }
-.accordion__open:before,
-.accordion__open:after {
+.accordion__title:before,
+.accordion__title:after {
   content: "";
   display: block;
   position: absolute;
@@ -966,19 +934,19 @@ top > faq
   transition: 0.2s ease transform;
 }
 @media screen and (min-width: 768px) {
-  .accordion__open:before,
-  .accordion__open:after {
+  .accordion__title:before,
+  .accordion__title:after {
     width: 14px;
     height: 2px;
   }
 }
-.accordion__open:after {
+.accordion__title:after {
   transform: translate(0, -50%) rotate(-90deg);
 }
-.accordion__open.active:after {
+.accordion__title.active:after {
   transform: translate(0, -50%) rotate(0deg);
 }
-.accordion__close {
+.accordion__content {
   padding: 0 15px;
   line-height: 1.5;
   background-color: var(--viewitem-color);
@@ -986,7 +954,7 @@ top > faq
   overflow: hidden;
   transition: 0.2s ease max-height;
 }
-.accordion__close p {
+.accordion__content p {
   margin: 15px 0;
 }
 
@@ -1071,9 +1039,9 @@ page > item > other
 }
 @media screen and (min-width: 768px) {
   .other__list {
-    margin-bottom: 80px;
     display: flex;
     gap: 40px;
+    margin-bottom: 80px;
   }
 }
 .other__item {
@@ -1091,12 +1059,23 @@ page > item > other
 .other__item-img {
   margin-bottom: 10px;
 }
+.other__item-text {
+  margin-bottom: 10px;
+}
+.other__item-text:last-of-type {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .other__item-text:last-of-type {
+    margin-bottom: 30px;
+  }
+}
 .other__btn {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .other__btn {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -1109,5 +1088,9 @@ page > page-404 > page-404
 }
 .page-404__ttl {
   margin-bottom: 15px;
+}
+.page-404__btn {
+  text-align: center;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
