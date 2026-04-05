@@ -62,13 +62,22 @@
       <!-- kv -->
       <div class="kv">
         <div class="kv__img">
-          <img src="img/kv.webp" alt="BLOOMのフルオーダーデコレーションケーキ" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/kv.webp" />
+            <img src="img/kv-sp.jpg" alt="BLOOMのカスタムケーキ" width="375" height="600" loading="lazy" />
+          </picture>
         </div>
 
-        <div class="kv__aside container--lg">
-          <p class="kv__text"><span>世界にひとつ</span><span>特別な日を</span><span>彩るケーキ</span></p>
-          <div class="kv__btn">
-            <a href="item.html" class="c-btn">VIEW ITEM</a>
+        <div class="kv__content">
+          <div class="kv__text-wrap">
+            <p class="kv__text">
+              <span class="kv__text-item">世界にひとつ</span>
+              <span class="kv__text-item">特別な日を</span>
+              <span class="kv__text-item">彩るケーキ</span>
+            </p>
+            <div class="kv__btn">
+              <a href="item.html" class="c-btn">VIEW ITEM</a>
+            </div>
           </div>
         </div>
       </div>
@@ -76,52 +85,54 @@
       <!-- concept -->
       <section id="concept" class="concept l-section">
         <div class="container--lg">
-          <div class="concept__top">
-            <div class="concept__img">
-              <img width="1080" height="707" src="img/concept_cake.webp" alt="苺と生クリームのホールケーキ" />
-            </div>
-
-            <div class="concept__texts">
-              <h2 class="ttl concept__ttl">CONCEPT</h2>
-              <h3 class="sub-ttl concept__subttl">世界にひとつのケーキ</h3>
-              <p class="text concept__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-            </div>
-          </div>
-
-          <div class="concept__list">
-            <div class="concept__item">
-              <div class="concept__item-img">
-                <img width="640" height="427" src="img/concept_list-1.webp" alt="新鮮な様々なフルーツ" />
+          <div class="concept__body">
+            <div class="concept__top">
+              <div class="concept__img u-img-shadow">
+                <img width="1080" height="707" src="img/concept_cake.webp" alt="苺と生クリームのホールケーキ" />
               </div>
 
-              <div class="concept__item-text">
-                <span class="c-subttl concept__item-english">Material</span>
-                <p class="c-ttl concept__item-ttl">素材へのこだわり</p>
-                <p class="c-text concept__item-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+              <div class="concept__texts">
+                <h2 class="ttl concept__ttl">CONCEPT</h2>
+                <h3 class="sub-ttl concept__subttl">世界にひとつのケーキ</h3>
+                <p class="text concept__text">特別な日は、世界にひとつだけのケーキで。BLOOMは、お客様一人ひとりの想いに寄り添い、記憶に残る最高の一皿をお届けします。大切な人へのサプライズや、自分へのご褒美に。心ときめく魔法を。</p>
               </div>
             </div>
 
-            <div class="concept__item">
-              <div class="concept__item-img">
-                <img width="640" height="427" src="img/concept_list-2.webp" alt="新鮮な様々なフルーツ" />
+            <div class="concept__list">
+              <div class="concept__item">
+                <div class="concept__item-img u-img-shadow">
+                  <img width="640" height="427" src="img/concept_list-1.webp" alt="新鮮な様々なフルーツ" />
+                </div>
+
+                <div class="concept__item-text">
+                  <span class="c-subttl concept__item-english">Material</span>
+                  <p class="c-ttl concept__item-ttl">素材へのこだわり</p>
+                  <p class="c-text concept__item-text">厳選された北海道産の生クリームと、その時期一番美味しい旬のフルーツ。素材本来の甘みを活かした、優しくリッチな味わいを追求しています。</p>
+                </div>
               </div>
 
-              <div class="concept__item-text">
-                <span class="c-subttl concept__item-english">Custom</span>
-                <p class="c-ttl concept__item-ttl">オーダーメイド</p>
-                <p class="c-text concept__item-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-              </div>
-            </div>
+              <div class="concept__item">
+                <div class="concept__item-img u-img-shadow">
+                  <img width="640" height="427" src="img/concept_list-2.webp" alt="新鮮な様々なフルーツ" />
+                </div>
 
-            <div class="concept__item">
-              <div class="concept__item-img">
-                <img width="640" height="427" src="img/concept_list-3.webp" alt="パティシエが料理をする様子" />
+                <div class="concept__item-text">
+                  <span class="c-subttl concept__item-english">Custom</span>
+                  <p class="c-ttl concept__item-ttl">オーダーメイド</p>
+                  <p class="c-text concept__item-text">色とりどりのクリームや繊細なデコレーション。形からトッピングまで、あなたの理想を叶える世界にひとつだけのデザインを提案します。</p>
+                </div>
               </div>
 
-              <div class="concept__item-text">
-                <span class="c-subttl concept__item-english">Pastry chef</span>
-                <h4 class="c-ttl concept__item-ttl">プロのパティシエ</h4>
-                <p class="c-text concept__item-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+              <div class="concept__item">
+                <div class="concept__item-img u-img-shadow">
+                  <img width="640" height="427" src="img/concept_list-3.webp" alt="パティシエが料理をする様子" />
+                </div>
+
+                <div class="concept__item-text">
+                  <span class="c-subttl concept__item-english">Pastry chef</span>
+                  <h4 class="c-ttl concept__item-ttl">プロのパティシエ</h4>
+                  <p class="c-text concept__item-text">経験豊富なパティシエが、ひとつひとつ丁寧に手作業で仕上げます。美味しさだけでなく、見た瞬間に笑顔がこぼれるような「感動」を閉じ込めて。</p>
+                </div>
               </div>
             </div>
           </div>
@@ -133,58 +144,58 @@
         <div class="container">
           <div class="menu__body">
             <div class="c-heading menu__heading">
-              <h2 class="ttl menu__ttl">MENU</h2>
-              <h3 class="sub-ttl menu__subttl">オーダーメニュー</h3>
+              <h2 class="ttl menu__title">MENU</h2>
+              <h3 class="sub-ttl menu__subtitle">オーダーメニュー</h3>
             </div>
 
             <div class="menu__list">
-              <div class="menu__list-item">
-                <div class="menu__list-img">
+              <div class="menu__item">
+                <div class="menu__item-img u-img-shadow">
                   <img width="840" height="560" src="img/menu-1.webp" alt="フルオーダーのカスタムケーキ" />
                 </div>
-                <div class="menu__list-text">
-                  <h4 class="c-ttl menu__list-ttl">CUSTOM CAKES</h4>
-                  <span class="c-text menu__list-subttl">フルオーダーメイドの<span>カスタムケーキ</span></span>
-                  <div class="menu__list-btn">
+                <div class="menu__item-content">
+                  <h4 class="c-ttl menu__item-title">CUSTOM CAKES</h4>
+                  <span class="c-text menu__item-text">フルオーダーメイドの<span>カスタムケーキ</span></span>
+                  <div class="menu__item-btn">
                     <a href="item.html" class="c-btn">VIEW ITEM</a>
                   </div>
                 </div>
               </div>
 
-              <div class="menu__list-item">
-                <div class="menu__list-img">
+              <div class="menu__item">
+                <div class="menu__item-img u-img-shadow">
                   <img width="840" height="1265" src="img/menu-2.webp" alt="フルオーダーのパーティーケーキ" />
                 </div>
-                <div class="menu__list-text">
-                  <h4 class="c-ttl menu__list-ttl">PARTY CATERING</h4>
-                  <span class="c-text menu__list-subttl">イベント用<span>ケータリングケーキ</span></span>
-                  <div class="menu__list-btn">
+                <div class="menu__item-content">
+                  <h4 class="c-ttl menu__item-title">PARTY CATERING</h4>
+                  <span class="c-text menu__item-text">イベント用<span>ケータリングケーキ</span></span>
+                  <div class="menu__item-btn">
                     <a href="item.html" class="c-btn">VIEW ITEM</a>
                   </div>
                 </div>
               </div>
 
-              <div class="menu__list-item">
-                <div class="menu__list-img">
+              <div class="menu__item">
+                <div class="menu__item-img u-img-shadow">
                   <img width="840" height="560" src="img/menu-3.webp" alt="人気の定番ケーキ" />
                 </div>
-                <div class="menu__list-text">
-                  <h4 class="c-ttl menu__list-ttl">CLASSIC CAKES</h4>
-                  <span class="c-text menu__list-subttl">ブランド定番の<span>人気ケーキライン</span></span>
-                  <div class="menu__list-btn">
+                <div class="menu__item-content">
+                  <h4 class="c-ttl menu__item-title">CLASSIC CAKES</h4>
+                  <span class="c-text menu__item-text">ブランド定番の<span>人気ケーキライン</span></span>
+                  <div class="menu__item-btn">
                     <a href="item.html" class="c-btn">VIEW ITEM</a>
                   </div>
                 </div>
               </div>
 
-              <div class="menu__list-item">
-                <div class="menu__list-img">
+              <div class="menu__item">
+                <div class="menu__item-img u-img-shadow">
                   <img width="840" height="1120" src="img/menu-4.webp" alt="フルオーダーのギフトカップケーキ" />
                 </div>
-                <div class="menu__list-text">
-                  <h4 class="c-ttl menu__list-ttl">GIFT SELECTION</h4>
-                  <span class="c-text menu__list-subttl">贈り物向け焼き菓子</span>
-                  <div class="menu__list-btn">
+                <div class="menu__item-content">
+                  <h4 class="c-ttl menu__item-title">GIFT SELECTION</h4>
+                  <span class="c-text menu__item-text">贈り物向け焼き菓子</span>
+                  <div class="menu__item-btn">
                     <a href="item.html" class="c-btn">VIEW ITEM</a>
                   </div>
                 </div>
@@ -266,17 +277,17 @@
           <dl class="accordion">
             <dt class="accordion__title">注文後、何日で届きますか？</dt>
             <dd class="accordion__content">
-              <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+              <p>フルオーダーケーキは、お届け希望日の14日前までのご注文をお願いしております。お急ぎの場合は、定番の「CLASSIC CAKES」からお選びください。</p>
             </dd>
 
             <dt class="accordion__title">お支払い方法について</dt>
             <dd class="accordion__content">
-              <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+              <p>各種クレジットカード、銀行振込、コンビニ決済、Apple Payに対応しております。</p>
             </dd>
 
             <dt class="accordion__title">送料はいくらでしょうか？</dt>
             <dd class="accordion__content">
-              <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+              <p>冷凍クール便にて全国一律1,100円（税込）でお届けします。15,000円以上のお買い上げで送料無料となります。</p>
             </dd>
           </dl>
         </div>
