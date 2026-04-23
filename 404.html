@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4FLMCC0C2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y4FLMCC0C2");
+    </script>
+
+    <!-- Search Console -->
+    <meta name="google-site-verification" content="hwV-7qXNjHzdIrwb5zSzaHR89h5wxo-PKJpYFKcHlVc" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BLOOM - 世界にひとつのオーダーケーキ -</title>
+    <meta name="description" content="BLOOMは、完全オーダーメイドのカスタムケーキを販売するオンラインケーキショップです。" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="BLOOM" />
+    <meta property="og:url" content="https://bloom-cake.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BLOOM - 世界にひとつのオーダーケーキ -" />
+    <meta property="og:description" content="BLOOMは、完全オーダーメイドのカスタムケーキを販売するオンラインケーキショップです。" />
+    <meta property="og:image" content="https://bloom-cake.com/img/og-image1200_630.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="BLOOMは、完全オーダーメイドのカスタムケーキを販売するオンラインケーキショップです。" />
+    <meta name="twitter:image:src" content="https://bloom-cake.com/img/og-image.png" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__logo">
+        <a class="header__logo-link" href="index.html">BLOOM</a>
+      </div>
+
+      <div class="header__icon">
+        <button class="header__icon-item js-modal-open" style="background: none; border: none; padding: 0; cursor: pointer"><img width="68" height="68" src="img/icon-cart.svg" alt="商品カート" /></button>
+      </div>
+    </header>
+
+    <!-- item-kv -->
+    <div class="item-kv">
+      <div class="item-kv__img">
+        <img src="img/item_kv-pc.webp" alt="BLOOMのフルオーダーデコレーションケーキ" />
+      </div>
+    </div>
+
+    <main>
+      <!-- page-404 -->
+      <section id="page-404" class="page-404 l-section">
+        <div class="container">
+          <div class="page-404__body">
+            <h1 class="page-404__ttl ttl">ページが見つかりませんでした。</h1>
+            <p class="page-404__text text">
+              お探しのページは移動または削除された可能性があります。 <br />
+              下記のボタンより、TOPへお戻りください。
+            </p>
+          </div>
+
+          <div class="page-404__btn">
+            <a href="index.html" class="c-btn">TOPに戻る</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__logo">
+            <a href="index.html">BLOOM</a>
+          </div>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="index.html" class="footer__link">TOP</a>
+              </li>
+              <li class="footer__item">
+                <a href="#concept" class="footer__link">CONCEPT</a>
+              </li>
+              <li class="footer__item">
+                <a href="#menu" class="footer__link">MENU</a>
+              </li>
+              <li class="footer__item">
+                <a href="#gallery" class="footer__link">GALLERY</a>
+              </li>
+              <li class="footer__item">
+                <a href="#faq" class="footer__link">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__copyright-wrap">
+          <small class="footer__copyright">2026 BLOOM</small>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+
+    <!-- モーダルウィンドウ -->
+
+    <div class="modal js-modal">
+      <div class="modal-overlay js-modal-close"></div>
+      <div class="modal-content">
+        <div class="modal-content__inner">
+          <form action="#" method="post" class="modal-form">
+            <h2 class="modal-content__title">Sign in</h2>
+
+            <section class="modal-form__section">
+              <label class="modal-form__label">Email</label>
+              <input type="email" name="email" class="modal-form__input" placeholder="example@mail.com" />
+            </section>
+
+            <section class="modal-form__section">
+              <label class="modal-form__label">Password</label>
+              <input type="password" name="password" class="modal-form__input" />
+            </section>
+
+            <button type="button" id="sign-in" class="modal-form__btn c-btn">Sign in</button>
+          </form>
+          <button class="modal-close js-modal-close">×</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
