@@ -18,25 +18,25 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>商品紹介 | BLOOM - 世界にひとつのオーダーケーキ -</title>
-    <meta name="description" content="BLOOMのカスタムケーキ（商品紹介）ページです。誕生日や記念日にぴったりの完全オーダーメイドケーキから、定番のクラシックケーキまで幅広くご紹介しています。" />
-    <meta name="format-detection" content="telephone=no" />
+    <title>BLOOM - 世界にひとつのオーダーケーキ -</title>
+    <meta name="description" content="BLOOMは、完全オーダーメイドのカスタムケーキを販売するオンラインケーキショップです。" />
 
     <!-- favicon/webclipicon -->
-    <link rel="shortcut icon" href="img/favicon32_32.png" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon180_180.png" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <!-- ogp -->
     <meta property="og:site_name" content="BLOOM" />
-    <meta property="og:url" content="https://haruka-design.github.io/bloom-cake/item.html" />
+    <meta property="og:url" content="https://bloom-cake.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="商品紹介 | BLOOM" />
-    <meta property="og:description" content="BLOOMのカスタムケーキ（商品紹介）ページです。誕生日や記念日にぴったりの完全オーダーメイドケーキから、定番のクラシックケーキまで幅広くご紹介しています。" />
-    <meta property="og:image" content="https://haruka-design.github.io/bloom-cake/img/og-image1200_630.png" />
+    <meta property="og:title" content="BLOOM - 世界にひとつのオーダーケーキ -" />
+    <meta property="og:description" content="BLOOMは、完全オーダーメイドのカスタムケーキを販売するオンラインケーキショップです。" />
+    <meta property="og:image" content="https://bloom-cake.com/img/og-image1200_630.png" />
     <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="BLOOMのカスタムケーキ（商品紹介）ページです。誕生日や記念日にぴったりの完全オーダーメイドケーキから、定番のクラシックケーキまで幅広くご紹介しています。" />
-    <meta name="twitter:image:src" content="https://haruka-design.github.io/bloom-cake/img/og-image1200_630.png" />
+    <meta name="twitter:description" content="BLOOMは、完全オーダーメイドのカスタムケーキを販売するオンラインケーキショップです。" />
+    <meta name="twitter:image:src" content="https://bloom-cake.com/img/og-image.png" />
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,6 +45,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- header -->
     <header class="header">
@@ -53,7 +54,7 @@
       </div>
 
       <div class="header__icon">
-        <button class="header__icon-item js-modal-open" style="background: none; border: none; padding: 0; cursor: pointer"><img width="68" height="68" src="img/icon-cart.svg" alt="商品カート" /></button>
+        <button class="header__icon-item js-modal-open"><img width="68" height="68" src="img/icon-cart.svg" alt="商品カート" /></button>
       </div>
     </header>
 
@@ -71,13 +72,16 @@
         <div class="container">
           <div class="item__body">
             <div class="item__img u-img-shadow">
-              <img width="840" height="960" src="img/menu_custom.webp" alt="フルオーダーのお菓子が乗ったパープルのカスタムケーキ" loading="lazy" />
+              <img width="840" height="960" src="img/menu-custom.webp" alt="マカロンが乗ったフルカスタムのパープルケーキ" loading="lazy" />
             </div>
             <div class="item__text-group">
               <h1 class="ttl item__ttl">CUSTOM CAKES</h1>
-              <p class="text item__text">あなたの想いをデザインに込める、完全予約制のカスタムケーキ。繊細なデコレーションと厳選された素材が織りなす、記憶に残るサプライズ体験をお届けします。</p>
+              <p class="c-text item__text">あなたの想いをデザインに込める、完全予約制のカスタムケーキ。繊細なデコレーションと厳選された素材が織りなす、記憶に残るサプライズ体験をお届けします。</p>
+
+              <p class="c-text item__text">4号／10,800円　5号／13,000円</p>
+
               <div class="item__btn">
-                <a href="#" class="c-btn">カートに追加</a>
+                <button class="c-btn js-modal-open">カートに追加</button>
               </div>
             </div>
           </div>
@@ -95,8 +99,8 @@
 
           <div class="other__list">
             <div class="other__item">
-              <img class="other__item-img u-img-shadow" src="img/menu_partycake.webp" alt="苺が乗った三段のパーティー用ケーキ" />
-              <h4 class="c-other-ttl other__item-ttl">PARTY CATERING</h4>
+              <img class="other__item-img u-img-shadow" src="img/menu-partycake.webp" alt="苺が乗った三段のパーティー用ケーキ" />
+              <h4 class="c-menu-ttl other__item-ttl">PARTY CATERING</h4>
               <p class="c-item-text other__item-text">イベント用ケーキ</p>
               <div class="other__btn">
                 <a href="#" class="c-btn">VIEW ITEM</a>
@@ -104,8 +108,8 @@
             </div>
 
             <div class="other__item">
-              <img class="other__item-img u-img-shadow" src="img/menu_signature.webp" alt="うさぎが乗ったキャラクターのデコレーションケーキ" />
-              <h4 class="c-other-ttl other__item-ttl">CLASSIC CAKES</h4>
+              <img class="other__item-img u-img-shadow" src="img/menu-signature.webp" alt="うさぎが乗った子供の誕生日デコレーションケーキ" />
+              <h4 class="c-menu-ttl other__item-ttl">CLASSIC CAKES</h4>
               <p class="c-item-text other__item-text">こだわりの定番ケーキ</p>
               <div class="item__btn">
                 <a href="#" class="c-btn is-active">VIEW ITEM</a>
@@ -113,8 +117,8 @@
             </div>
 
             <div class="other__item">
-              <img class="other__item-img u-img-shadow" src="img/menu_gift.webp" alt="桃のクリームのカップケーキ" />
-              <h4 class="c-other-ttl other__item-ttl">GIFT SELECTION</h4>
+              <img class="other__item-img u-img-shadow" src="img/menu-gift.webp" alt="桃クリームのギフトカップケーキ" />
+              <h4 class="c-menu-ttl other__item-ttl">GIFT SELECTION</h4>
               <p class="c-item-text other__item-text">贈り物向けセット</p>
               <div class="item__btn">
                 <a href="#" class="c-btn">VIEW ITEM</a>
@@ -180,7 +184,7 @@
               <input type="password" name="password" class="modal-form__input" />
             </section>
 
-            <button id="sign-in" class="modal-form__btn c-btn">Sign in</button>
+            <button type="button" id="sign-in" class="modal-form__btn c-btn">Sign in</button>
           </form>
           <button class="modal-close js-modal-close">×</button>
         </div>

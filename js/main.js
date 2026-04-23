@@ -1,15 +1,17 @@
 // モーダルウィンドウ
-
 const modal = document.querySelector(".js-modal");
-const modalOpen = document.querySelector(".js-modal-open");
+const modalOpenBtns = document.querySelectorAll(".js-modal-open");
 const modalClose = document.querySelectorAll(".js-modal-close");
 
-// モーダルを開く
-modalOpen.addEventListener("click", () => {
-  modal.classList.add("is-active");
+// 開く
+modalOpenBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("is-active");
+  });
 });
 
-// モーダルを閉じる
+// 閉じる
 modalClose.forEach((closeButton) => {
   closeButton.addEventListener("click", () => {
     modal.classList.remove("is-active");
@@ -17,7 +19,6 @@ modalClose.forEach((closeButton) => {
 });
 
 // アコーディオン
-
 const accTtls = Array.from(document.querySelectorAll(".accordion__title"));
 
 accTtls.forEach((item) => {

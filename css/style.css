@@ -279,7 +279,7 @@ component > title
 }
 @media screen and (min-width: 768px) {
   .ttl {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -324,9 +324,15 @@ component > title
   font-weight: 500;
   line-height: 1;
 }
+
+.c-menu-ttl {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-family-english);
+}
 @media screen and (min-width: 768px) {
-  .c-ttl {
-    font-size: 2.6rem;
+  .c-menu-ttl {
+    font-size: 2.8rem;
   }
 }
 
@@ -347,7 +353,7 @@ component > title
 }
 @media screen and (min-width: 768px) {
   .c-concept-lead {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: left;
   }
 }
@@ -355,7 +361,6 @@ component > title
 .c-other-ttl {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 5px;
   font-family: var(--font-family-english);
 }
 @media screen and (min-width: 768px) {
@@ -711,7 +716,7 @@ page > top > concept
   }
 }
 .concept__item-ttl {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .concept__item-english {
   margin-bottom: 5px;
@@ -1035,8 +1040,9 @@ top > faq
 @media screen and (min-width: 768px) {
   .item__body {
     flex-direction: row;
-    justify-content: center;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
   }
 }
 .item__img {
@@ -1044,19 +1050,19 @@ top > faq
 }
 @media screen and (min-width: 768px) {
   .item__img {
-    max-width: 420px;
+    margin: 0 auto;
   }
 }
 .item__text-group {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
   text-align: justify;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .item__text-group {
     margin: 0;
+    justify-content: center;
   }
 }
 .item__ttl {
@@ -1128,6 +1134,9 @@ page > item > other
 }
 .other__item-img {
   margin-bottom: 10px;
+}
+.other__item__item-ttl {
+  margin: 20px 0 10px;
 }
 .other__item-text {
   margin-bottom: 10px;
