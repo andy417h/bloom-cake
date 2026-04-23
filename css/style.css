@@ -4,6 +4,7 @@ global > color
 */
 :root {
   --main-color: #a69790;
+  --header-color: rgba(166, 151, 144, 0.4);
   --bg-color: #fafafa;
   --viewitem-color: rgba(166, 151, 144, 0.15);
   --kv-bg-color: rgba(250, 250, 250, 0.8);
@@ -272,13 +273,13 @@ component > title
 */
 .ttl {
   font-family: var(--font-family-english);
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: var(--ttl-color);
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .ttl {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
@@ -296,13 +297,14 @@ component > title
 }
 
 .text {
-  line-height: 2em;
-  font-family: var(--font-family-base);
+  line-height: 2.2;
   color: var(--text-color);
+  letter-spacing: 0.15em;
+  text-align: justify;
 }
 @media screen and (min-width: 768px) {
   .text {
-    font-size: 1.6rem;
+    line-height: 2;
   }
 }
 
@@ -318,13 +320,13 @@ component > title
 }
 
 .c-ttl {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .c-ttl {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -335,6 +337,18 @@ component > title
   .c-text {
     line-height: 1.7;
     letter-spacing: 0.05em;
+  }
+}
+
+.c-concept-lead {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .c-concept-lead {
+    font-size: 1.6rem;
+    text-align: left;
   }
 }
 
@@ -383,16 +397,23 @@ layout > header
 ------------------------------
 */
 .header {
-  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-index-header);
+  background-color: var(--header-color);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   padding: 0 5%;
 }
 @media screen and (min-width: 768px) {
   .header {
-    height: 120px;
-    padding: 0 35px;
+    height: 70px;
   }
 }
 .header__logo {
@@ -610,12 +631,15 @@ page > top > concept
 .concept__top {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .concept__top {
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 50px;
+    max-width: 1000px;
   }
 }
 .concept__img {
@@ -623,7 +647,19 @@ page > top > concept
 }
 @media screen and (min-width: 768px) {
   .concept__img {
-    max-width: 540px;
+    flex: 0 0 40%;
+    max-width: 600px;
+    margin-bottom: 0px;
+  }
+}
+.concept__texts {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .concept__texts {
+    flex: 0 0 40%;
+    text-align: left;
   }
 }
 .concept__ttl {
@@ -634,17 +670,6 @@ page > top > concept
     text-align: left;
   }
 }
-.concept__texts {
-  display: flex;
-  flex-direction: column;
-  max-width: 260px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .concept__texts {
-    margin: 0;
-  }
-}
 .concept__subttl {
   margin-bottom: 10px;
   text-align: center;
@@ -653,6 +678,14 @@ page > top > concept
   .concept__subttl {
     margin-bottom: 15px;
     text-align: left;
+  }
+}
+.concept__lead {
+  margin: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .concept__text {
+    max-width: 380px;
   }
 }
 .concept__list {
@@ -701,13 +734,8 @@ page > top > kv
 */
 .kv {
   position: relative;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .kv {
-    height: 85vh;
-  }
 }
 .kv__img {
   height: 100%;
@@ -908,7 +936,7 @@ page > top > gallery
 }
 @media screen and (min-width: 768px) {
   .gallery__list {
-    gap: 80px 25px;
+    gap: 40px;
     margin-bottom: 80px;
   }
 }
