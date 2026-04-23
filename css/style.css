@@ -1168,6 +1168,9 @@ page > page-404 > page-404
 .page-404__ttl {
   margin-bottom: 15px;
 }
+.page-404__text {
+  text-align: center;
+}
 .page-404__btn {
   text-align: center;
   margin-top: 50px;
